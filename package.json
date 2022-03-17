@@ -1,8 +1,19 @@
 {
   "name": "@ajmchambers/microbundle-lib-test",
-  "type": "module",
-  "version": "1.0.0",
   "description": "Test browser/node library processed with microbundle",
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajmchambers/microbundle-lib-test.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ajmchambers/microbundle-lib-test/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
   "source": "src/index.ts",
   "exports": {
     ".": {
