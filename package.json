@@ -1,0 +1,32 @@
+{
+  "name": "@ajmchambers/microbundle-lib-test",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Test browser/node library processed with microbundle",
+  "source": "src/index.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.modern.js"
+    },
+    "./foo": {
+      "require": "./dist/foo.cjs",
+      "default": "./dist/foo.modern.js"
+    },
+    "./sum": {
+      "require": "./dist/sum.cjs",
+      "default": "./dist/sum.modern.js"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.module.js",
+  "unpkg": "./dist/index.umd.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch"
+  },
+  "devDependencies": {
+    "microbundle": "^0.14.2"
+  }
+}
