@@ -1,7 +1,7 @@
 {
   "name": "@ajmchambers/microbundle-lib-test",
   "description": "Test browser/node library processed with microbundle",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -40,6 +40,12 @@
   "module": "./dist/index.module.js",
   "unpkg": "./dist/index.umd.js",
   "types": "dist/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "foo": ["dist/foo.d.ts"],
+      "sum": ["dist/sum.d.ts"]
+    }
+  },
   "scripts": {
     "build": "microbundle src/*.ts",
     "dev": "microbundle watch"
