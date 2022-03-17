@@ -36,7 +36,8 @@
       "import": "./dist/sum.modern.js",
       "require": "./dist/sum.cjs",
       "default": "./dist/sum.modern.js"
-    }
+    },
+    "./package.json": "./package.json"
   },
   "main": "./dist/index.cjs",
   "module": "./dist/index.module.js",
